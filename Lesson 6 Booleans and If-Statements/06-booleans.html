@@ -22,11 +22,36 @@
       //   console.log('You can not drive');
       // }
 
-      console.log(true && false);
-      console.log(0.2 >= 0 && 0.2 < 1 / 3);
+      // console.log(true && false);
+      // console.log(0.2 >= 0 && 0.2 < 1 / 3);
 
-      console.log(true || false);
-      console.log(!true);
+      // console.log(true || false);
+      // console.log(!true);
+
+      // const result = 0 ? 'truthy' : 'falsy';
+      // console.log(result);
+
+      // false && console.log('hello');
+      /*
+        equivalent to
+        if (condition) {
+          console.log('hello');
+        }
+      */
+
+      // const message = false && 'hello'; returns false
+      const message = 5 && 'hello'; // returns 'hello'
+      console.log(message);
+
+      // const currency = 'EUR' || 'USD'; // left side is truthy
+      // console.log(currency); // prints 'EUR'
+
+      const currency = undefined || 'USD'; // left side is truthy
+      console.log(currency); // prints USD
+
+      // const currency = boolean value || 'default value'
+      // if first value is truthy then it will be first value
+      // otherwise it will be the default value
     </script>
   </body>
 </html>
