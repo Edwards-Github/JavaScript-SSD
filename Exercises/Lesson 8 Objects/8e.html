@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head></head>
+  <body>
+    <script>
+      const basketball = {
+        name: 'basketball',
+        price: 2095
+      };
+
+      const soccerball = {
+        name: 'soccer',
+        price: 1595
+      };
+
+      const product = basketball;
+
+      function isSameProduct(product1, product2) {
+        return product1 === product2 ? true : false;
+      }
+
+      console.log(isSameProduct(soccerball, basketball));
+      console.log(isSameProduct(basketball, product));
+    </script>
+  </body>
+</html>
