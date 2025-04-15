@@ -7,7 +7,16 @@
 
   <body>
     <button>hello</button>
+    <button class="js-button">Second button</button>
     <script>
+      console.log(document.querySelector('button').innerHTML);
+      document.querySelector('button')
+        .innerHTML = 'Changed';
+
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+      
+      /*
       console.log(document.title);
       document.title = 'Changed';
 
@@ -15,10 +24,13 @@
       console.log(typeof document.body);
 
       console.log(document.body.innerHTML);
-       document.body.innerHTML = 'Changed';
+       document.body.innerHTML = '<button>Good job!</button>';
+       */
+
       /*
       document.body.innerHTML = 'hello';
       document.title = 'Good job!';
+      document.querySelector() lets us get any element from the page and put it inside JavaScript
       */
     </script>
   </body>
