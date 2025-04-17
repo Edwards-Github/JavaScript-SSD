@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+  </head>
+
+  <body>
+    <input type="text" 
+      placeholder="Type something"
+      class="text-box"
+      onkeyup="
+        document.querySelector('.output')
+          .innerHTML = `${document.querySelector('.text-box').value}`;
+      ">
+    <p class="output"></p>
+  </body>
+</html>
