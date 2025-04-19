@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .on {
+        font-size: 15px;
+        padding: 10px 12px;
+        background-color: rgb(6, 197, 255);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .off {
+        font-size: 15px;
+        padding: 10px 12px;
+        background-color: rgb(218, 218, 218);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="js-button off" onclick="toggleButton()">OFF</button>
+
+    <script>
+      function toggleButton(){
+        const buttonElement = document.querySelector('.js-button');
+
+        if(buttonElement.innerText === 'OFF') {
+          buttonElement.innerHTML = 'ON';
+          buttonElement.classList.remove('off');
+          buttonElement.classList.add('on');
+        }
+        else {
+          buttonElement.innerHTML = 'OFF';
+          buttonElement.classList.remove('on');
+          buttonElement.classList.add('off');
+        }
+      }
+    </script>
+  </body>
+</html>
