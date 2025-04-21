@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .is-toggled {
+        color: white;
+        font-size: 15px;
+        padding: 10px 12px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button {
+        color: black;
+        font-size: 15px;
+        padding: 10px 12px;
+        background-color: rgb(220, 220, 220);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="js-gaming-button off" onclick="toggleButton('js-gaming-button', 'js-gaming-button', 'js-music-button', 'js-tech-button')">Gaming</button>
+
+    <button class="js-music-button off" onclick="toggleButton('js-music-button', 'js-music-button', 'js-gaming-button', 'js-tech-button')">Music</button>
+
+    <button class="js-tech-button off" onclick="toggleButton('js-tech-button', 'js-tech-button', 'js-gaming-button', 'js-music-button')">Tech</button>
+
+    <script>
+      function toggleButton(toggleClass, class1Name, class2Name, class3Name){
+        const buttonElement = document.querySelector(`.${toggleClass}`);
+
+        turnOffToggledButton();
+        buttonElement.classList.add('is-toggled');
+      }
+
+      function turnOffToggledButton() {
+        const toggledButton = document.querySelector('.is-toggled');
+
+        if(toggledButton) {
+          toggledButton.classList.remove('is-toggled');
+        }
+      }
+    </script>
+  </body>
+</html>
