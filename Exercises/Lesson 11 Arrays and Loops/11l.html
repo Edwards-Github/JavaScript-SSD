@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <title>11l</title>
+  </head>
+
+  <body>
+    <script>
+      let nums = [-2, 3, -5, 7, 10];
+      minMax(nums);
+      function minMax(nums){
+        let min = nums[0];
+        let max = nums[0];
+
+        for(let i = 0; i < nums.length; i++) {
+          let curr = nums[i];
+          if(curr < min) {
+            min = curr;
+          }
+
+          if(curr > max){
+            max = curr;
+          }
+        }
+
+        console.log(`min: ${min}, max: ${max}`);
+      }
+    </script>
+  </body>
+</html>

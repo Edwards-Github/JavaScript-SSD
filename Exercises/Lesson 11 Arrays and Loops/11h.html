@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <title>11h</title>
+  </head>
+
+  <body>
+    <script>
+      let array = [1, 2, 3];
+      console.log(array);
+
+      console.log(addOne(array));
+      function addOne(array) {
+        let temp = [];
+        for(let i = 0; i < array.length; i++){
+          temp.push(array[i] + 1);
+        }
+        return temp;
+      }
+    </script>
+  </body>
+</html>
