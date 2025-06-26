@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <title>11p</title>
+  </head>
+
+  <body>
+    <script>
+      function searchInside(s) {
+        for (let i = 0; i < s.length; i++) {
+          let word = s[i];
+          if (word === 'search') {
+            return i;
+          }
+        }
+        return -1;
+      }
+
+      console.log(searchInside(['hello', 'world', 'search', 'good']));
+      console.log(searchInside(['not', 'found']));
+    </script>
+  </body>
+</html>
