@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+
+  <body>
+    <button class="start-button" onclick="updateButton()">Start</button>
+    <script>
+      function updateButton() {
+        const button = document.querySelector('.start-button');
+        button.innerHTML = 'Loading...';
+        setTimeout(function() {
+          button.innerHTML = 'Finished!';
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
